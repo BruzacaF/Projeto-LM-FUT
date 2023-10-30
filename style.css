@@ -1,0 +1,409 @@
+:root{
+    --color-text: #fff;
+    --background-navbar: rgba(0, 0, 0, 0.5);
+    --border-radius: 5px;
+    --background-button: #f00;
+    --background-main: #A9BF04;
+}
+
+*{
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    display: grid;
+    grid-template-areas: 'navbar' 'title' 'button';
+    grid-template-rows: 40px[navbar] 1fr[title] 1fr[button];
+    place-items: center;
+
+
+    background-image: url(/img/Background-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100vw;;
+}
+
+
+/*================ navbar ============== */
+header .navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background-navbar);
+}
+
+
+header .navbar a{
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+
+header .navbar a:hover{
+    color: #f00;
+}
+
+/*================ title ============== */
+
+header .title{
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header .title h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header .title p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/*================ button ============== */
+
+header .button{
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+
+    border-radius: var(--border-radius);
+    background: var(--background-navbar);
+    transition: all 0.3s ease;
+}
+
+header .button a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .button:hover{
+    background: var(--background-button);
+    scale: 1.1;
+    
+}
+
+
+/* =========== main ==================== */
+
+main{
+    display: grid;
+    grid-template-areas: 'title' 'rodada ''content';
+    grid-template-rows: 1fr[title] 40px[rodada]1fr[content];
+    place-items: center;
+
+    background-color: var(--background-main);
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ========== MAIN SLIDE RODADA ===================== */
+
+
+
+
+/*========================= MAIN TITLE ============== */
+main .title{
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .title h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .title p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/*======================== RODADA =================== */
+
+.scrolling_text {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    background-color: #465902;
+}
+
+.text span {
+    margin: 0 40px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+@keyframes animate_text {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+/* =============== main cards ===================== */
+main .container{
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    
+}
+
+
+main .container .card{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 20px 40px;
+    margin: 0 30px;
+
+    border-radius: var(--border-radius);
+    background: var(--background-navbar);
+    transition: all 0.3s ease;
+
+    width: 300PX;
+    height: 300px;
+}
+
+main .container .card h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+main .container .card p{
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+main .container .card a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-button);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+}
+
+main .container .card:hover{
+    background: wheat;
+    scale: 1.1;
+}
+
+
+/* =============== footer ===================== */
+
+footer{
+    display: grid;
+    grid-template-areas: 'address contact social';
+    grid-template-columns: 1fr[adress] 1fr[social] 1fr[contact];
+    background-color: #465902;
+    
+
+    padding: 40px;
+
+    height: 200px;
+} 
+
+footer .address{
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+footer .address h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .address p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/*================== SOCIALS ========== */
+
+footer .socials{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    color: var(--color-text);
+}
+
+
+
+footer .socials ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer .socials ul li{
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/*================== CONTACT ========== */
+
+footer .contact{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: var(--color-text);
+}
+
+footer .contact h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .contact p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+footer .contact a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+body > h2{
+    background-color: rgb(56, 95, 19);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
