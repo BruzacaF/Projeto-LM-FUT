@@ -1,0 +1,196 @@
+body {
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 30%;
+    background-color: darkgreen;
+    margin: auto;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.time {
+    text-align: start;
+}
+
+header .navbar {
+    background-color: greenyellow;
+}
+
+.navbar { 
+    display: grid;
+    grid-template-columns: 0fr 2fr 0fr;
+    list-style: none;
+    padding: 10px;
+    background-color: var(--background-header);
+    background-attachment: fixed;
+    font-size: 1.5rem;
+}
+
+.navbar .menu > a {
+    display: inline;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+.menu {
+    justify-self: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.login {
+    text-align: end;
+    padding-left: 10px;
+  }
+
+.futbrasa {
+padding-right: 10px;
+}
+
+a:hover {
+    color: red;
+}
+
+main {
+    background-image: url(/img/Background-header.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+main > h1 {
+    text-align: center;
+}
+
+/*footer*/
+
+.main_footer {
+    background-color: limegreen;
+    color: white;
+    font-size: 1rem;
+}
+
+.main_footer .content {
+    float: left;
+    width: 90%;
+    margin: 0 5%;
+    padding: 5rem 0;
+}
+
+.container {
+    float: left;
+    width: 100%;
+}
+
+.colfooter {
+
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 2rem;
+
+}
+
+.colfooter ul {
+    width: 100%;
+    float: left;
+}
+
+.colfooter ul li {
+    padding: 0.2rem 0rem;
+}
+
+.colfooter ul li a i {
+    font-size: 1rem;
+}
+
+.colfooter .titleFooter {
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px greenyellow solid;
+}
+
+.botao {
+
+    padding: 10px 12px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 7px;
+
+}
+
+.main_footer_copy {
+    background-color: forestgreen;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+
+.main_footer_copy p {
+    font-size: 1rem;
+    color: white;
+    height: 20px;
+}
+
+/*Footer Responsivo*/
+@media (min-width:48em) {
+
+    .colfooter {
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    .colfooter:nth-of-type(3n+0) {
+        margin-right: 0;
+        border-right: 0;
+    }
+
+}
+
+
+@media (min-width: 514px) {
+    .sanduiche {
+      display: none;
+    }
+    #titulo {
+        font-size: 30px;
+    }
+  }
+  
+@media (max-width: 513px) {
+.menu {
+    display: none;
+}
+.login {
+    padding-right: 10px;
+}
+img:hover {
+    font-display: red;
+}
+}

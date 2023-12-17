@@ -1,0 +1,315 @@
+body {
+  color: white;
+  font-family: 'Audiowide', sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+  .navbar { 
+    display: grid;
+    grid-template-columns: 0fr 2fr 0fr;
+    list-style: none;
+    padding: 10px;
+    background-color: greenyellow;
+    background-attachment: fixed;
+    font-size: 1.5rem;
+}
+
+.navbar .menu > a {
+  display: inline;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.menu {
+  justify-self: center;
+  text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.login {
+  text-align: end;
+  padding-left: 10px;
+}
+
+.futbrasa {
+  padding-right: 10px;
+}
+
+  
+  section.tabelajogos, .jogos {
+    text-align: center;
+  }
+  section {
+    background-color: #A9BF04;
+    padding-bottom: 100px;
+    
+  }
+  .jogos {
+      margin: 0;
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.625em;
+      font-weight: bold;
+      letter-spacing: -0.04em;
+      line-height: 1.75em;
+      text-transform: uppercase;
+  }
+  
+  .navjogos {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    line-height: 1.75em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 3px;
+    margin: auto;
+    max-width: 600px;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  }
+  
+  .navleft {
+    text-align: left;
+  }
+  .navright {
+    text-align: right;
+  }
+  
+  .lista-jogos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .local-hora {
+    display: inline;
+    margin: auto;
+  }
+  
+  .placar {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .line-jogo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    padding-bottom: 7px;
+  }
+  
+  .local-jogo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    padding-right: 5px;
+  }
+  
+  .hora-jogo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-right: auto;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+  
+  .placar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: end;
+    flex-wrap: nowrap;
+  }
+  
+  .left {
+    align-self: center;
+  }
+  
+  .versus-time {
+    align-self: center;
+  }
+  
+  .right {
+    align-self: center;
+  }
+  
+  .placar-right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: left;
+    ;
+    flex-wrap: nowrap;
+  }
+  
+  .nome {
+    font-size: 16px;
+  }
+  
+  .gols {
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 1px;
+  }
+  
+  .link-jogo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #A9BF04;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .img {
+    padding-top: 5px;
+  }
+
+  /*footer*/
+
+.main_footer {
+  background-color: limegreen;
+  color: white;
+  font-size: 1rem;
+}
+
+.main_footer .content {
+  float: left;
+  width: 90%;
+  margin: 0 5%;
+  padding: 5rem 0;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+.colfooter {
+
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 2rem;
+
+}
+
+.colfooter ul {
+  width: 100%;
+  float: left;
+}
+
+.colfooter ul li {
+  padding: 0.2rem 0rem;
+}
+
+.colfooter ul li a i {
+  font-size: 1rem;
+}
+
+.colfooter .titleFooter {
+  font-size: 1.3rem;
+  color: white;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px greenyellow solid;
+}
+
+.botao {
+
+  padding: 10px 12px;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 7px;
+
+}
+
+.main_footer_copy {
+  background-color: forestgreen;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 1.5rem 0rem;
+}
+
+.main_footer_copy p {
+  font-size: 1rem;
+  color: white;
+  height: 20px;
+}
+
+/*Footer Responsivo*/
+@media (min-width:48em) {
+
+  .colfooter {
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 0;
+  }
+
+  .colfooter:nth-of-type(3n+0) {
+      margin-right: 0;
+      border-right: 0;
+  }
+
+}
+
+/* Tabela de jogos  */
+@media (max-width: 400px) {
+  .nome {
+    display: none;
+  }
+}
+@media (min-width: 401px) {
+  .sigla {
+    display: none;
+  }
+}
+
+/* Header  */
+@media (min-width: 514px) {
+  .sanduiche {
+    display: none;
+  }
+}
+
+@media (max-width: 513px) {
+  .menu {
+    display: none;
+  }
+  .login {
+    padding-right: 10px;
+  }
+  img:hover {
+    font-display: red;
+  }
+}
